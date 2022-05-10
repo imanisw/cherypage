@@ -141,7 +141,7 @@ getting all eleiments with the class img that are direct descendants of elements
 }
 .annotate{
     position: relative;
-    top: 55%;
+    top: 75%;
     left: 30%;
 }
 #camera:not(.active) {
