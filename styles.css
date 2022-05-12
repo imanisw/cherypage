@@ -87,7 +87,7 @@ figcaption {
 .container {
     width: 100%;
     max-width: 800px;
-    padding: 10px;
+    padding: 50px;
     margin: 0 auto;
 }
 
@@ -95,9 +95,9 @@ figcaption {
 /** Images are allowed to be a little wider when broken out into their own container */
 
 .container.image {
-    max-width: 2000px;
-    padding: 0;
-    margin: 10px;
+    max-width: 900px;
+    padding: 10px;
+    margin: 0px;
 }
 
 .container.image .caption,
@@ -110,7 +110,11 @@ figcaption {
     flex-wrap: wrap; 
     justify-content: space-between;
 }
-
+.annotate {
+    max-width: 1000px;
+    padding: 0px; 
+    margin: 0px;
+}
 /**
 getting all eleiments with the class img that are direct descendants of elements with the class 'collage'
 */
@@ -140,7 +144,8 @@ getting all eleiments with the class img that are direct descendants of elements
 }
 .pink{
     background-color: tan;
-    opacity: 90%;
+    opacity: 80%;
+    color: black; 
 }
 .annotate{
     position: relative;
@@ -166,7 +171,7 @@ getting all eleiments with the class img that are direct descendants of elements
 }
 .container {
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     padding: 10px;
     margin: 0 auto;
 }
@@ -183,7 +188,8 @@ getting all eleiments with the class img that are direct descendants of elements
 }
 .red{
     background-color: lightblue;
-    opacity: 90%;
+    opacity: 80%;
+    color: black; 
 }
 .annotate{
     position: relative;
@@ -205,6 +211,18 @@ getting all eleiments with the class img that are direct descendants of elements
 .dot.active .close{
     display: block;
 }
+
+.blue {
+    background-color: lightseagreen;
+    opacity: 90%;
+}
+.annotate{
+    position: relative;
+}
+#camer32:not(.active) {
+    top: 40%;
+    left: 33%;
+}
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
 
@@ -216,7 +234,7 @@ getting all eleiments with the class img that are direct descendants of elements
 
 #camera2:not(.active) {
     top: 60%;
-    left: 33%;
+    left: 44%;
 }
 }
 
