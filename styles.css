@@ -38,7 +38,7 @@ html {
 
 }
 .header {
-    padding: 10px;
+    padding: 0px;
     text-align: center;
     background: black; 
     color: white;
@@ -60,7 +60,7 @@ p {
 }
 
 header {
-    margin-bottom: 16px;
+    margin-bottom: 2px;
 }
 
 header p {
@@ -85,19 +85,21 @@ figcaption {
 * mobile edge */
 
 .container {
-    width: 100%;
-    max-width: 800px;
-    padding: 50px;
+    width: 80%;
+    max-width: 500px;
+    padding: 0px;
     margin: 0 auto;
+    display: flex;
 }
 
 
 /** Images are allowed to be a little wider when broken out into their own container */
 
 .container.image {
-    max-width: 900px;
-    padding: 10px;
-    margin: 0px;
+    max-width: 1000px;
+    padding: 2px;
+    margin: 3px;
+    display: block;
 }
 
 .container.image .caption,
@@ -110,11 +112,7 @@ figcaption {
     flex-wrap: wrap; 
     justify-content: space-between;
 }
-.annotate {
-    max-width: 1000px;
-    padding: 0px; 
-    margin: 0px;
-}
+
 /**
 getting all eleiments with the class img that are direct descendants of elements with the class 'collage'
 */
@@ -131,6 +129,12 @@ getting all eleiments with the class img that are direct descendants of elements
     margin-bottom: 5px; 
 
 }
+.img1{
+   justify-items: space; 
+   max-width: 1000px;
+   display: block;
+}
+
 .dot{
     width: 25px;
     height: 25px; 
@@ -151,6 +155,7 @@ getting all eleiments with the class img that are direct descendants of elements
     position: relative;
     top: 75%;
     left: 30%;
+    max-width: 1000px;
 }
 #camera:not(.active) {
     top: 67%;
@@ -195,8 +200,8 @@ getting all eleiments with the class img that are direct descendants of elements
     position: relative;
 }
 #camera2:not(.active) {
-    top: 90%;
-    left: 33%;
+    top: 60%;
+    left: 50%;
 }
 .dot.active{
     width: 100%;
@@ -215,13 +220,37 @@ getting all eleiments with the class img that are direct descendants of elements
 .blue {
     background-color: lightseagreen;
     opacity: 90%;
+    color: black;
 }
 .annotate{
     position: relative;
 }
-#camer32:not(.active) {
-    top: 40%;
-    left: 33%;
+#camera3:not(.active) {
+    top: 50%;
+    left: 49%;
+}
+
+.green{
+    background-color: lightseagreen; 
+    opacity: 80%;
+    color: black; 
+} 
+#deceus:not(.active) {
+    top: 50%;
+    left: 49%;
+}
+.dot.active{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.dot.active .inner,
+.dot.active .close{
+    display: block;
 }
 /*********************************************************************
   YOUR TABLET/DESKTOP STYLES GO HERE
