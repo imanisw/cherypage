@@ -31,8 +31,8 @@ You will find this is far easier than the opposite task of using CSS to cram you
 body,
 html {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
-    font-size: 16px;
-    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+    font-family: 'Oxygen', serif;
     background-color: black;
     color: white; 
 
@@ -46,6 +46,9 @@ html {
   }
 
 /** RESPONSIVE IMAGES */
+.annotate {
+    margin: 0 auto;
+}
 
 figure,
 img {
@@ -85,11 +88,11 @@ figcaption {
 * mobile edge */
 
 .container {
-    width: 80%;
-    max-width: 500px;
-    padding: 0px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 10px;
     margin: 0 auto;
-    display: flex;
+    display: block;
 }
 
 
@@ -97,10 +100,12 @@ figcaption {
 
 .container.image {
     max-width: 1000px;
-    padding: 2px;
-    margin: 3px;
+    width: 100%;
+    padding: 3px;
+    margin: 0 auto;
     display: block;
 }
+    
 
 .container.image .caption,
 .container.image figcaption {
@@ -129,10 +134,10 @@ getting all eleiments with the class img that are direct descendants of elements
     margin-bottom: 5px; 
 
 }
-.img1{
-   justify-items: space; 
+.img {
    max-width: 1000px;
    display: block;
+   margin: 0 auto;
 }
 
 .dot{
@@ -156,6 +161,7 @@ getting all eleiments with the class img that are direct descendants of elements
     top: 75%;
     left: 30%;
     max-width: 1000px;
+    margin: 0 auto;
 }
 #camera:not(.active) {
     top: 67%;
