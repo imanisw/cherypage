@@ -31,24 +31,22 @@ You will find this is far easier than the opposite task of using CSS to cram you
 body,
 html {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
-    font-size: 14px;
-    font-family: 'Oxygen', serif;
+    font-size: 16px;
+    font-family: 'Oxygen', sans-serif;
     background-color: black;
-    color: white; 
-
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-align: left;
+    overflow-y: auto;
 }
-.header {
-    padding: 0px;
+.header{
     text-align: center;
-    background: black; 
-    color: white;
-    font-size: 10px;
-  }
+}
 
 /** RESPONSIVE IMAGES */
-.annotate {
-    margin: 0 auto;
-}
 
 figure,
 img {
@@ -63,7 +61,7 @@ p {
 }
 
 header {
-    margin-bottom: 2px;
+    margin-bottom: 16px;
 }
 
 header p {
@@ -76,7 +74,7 @@ header p {
 .caption,
 figcaption {
     font-size: 0.9rem;
-    color: #8e8a8a;
+    color: #ffffff;
     padding: 5px 0;
 }
 
@@ -92,7 +90,6 @@ figcaption {
     max-width: 1000px;
     padding: 10px;
     margin: 0 auto;
-    display: block;
 }
 
 
@@ -100,12 +97,8 @@ figcaption {
 
 .container.image {
     max-width: 1000px;
-    width: 100%;
-    padding: 3px;
-    margin: 0 auto;
-    display: block;
+    padding: 0;
 }
-    
 
 .container.image .caption,
 .container.image figcaption {
@@ -116,6 +109,7 @@ figcaption {
     display: block; 
     flex-wrap: wrap; 
     justify-content: space-between;
+    flex-basis: 50%;
 }
 
 /**
@@ -134,12 +128,6 @@ getting all eleiments with the class img that are direct descendants of elements
     margin-bottom: 5px; 
 
 }
-.img {
-   max-width: 1000px;
-   display: block;
-   margin: 0 auto;
-}
-
 .dot{
     width: 25px;
     height: 25px; 
@@ -151,19 +139,20 @@ getting all eleiments with the class img that are direct descendants of elements
 .dot .close{
     display: none;
 }
-.pink{
-    background-color: tan;
-    opacity: 80%;
-    color: black; 
+
+.green {
+    background-color: #79978d; 
+    opacity: 80%; 
+}  
+.annotate {
+    position: relative; 
 }
-.annotate{
-    position: relative;
+
+#camera5:not(.active){
+    top: 93%;
+    left: 1%; 
+}
  
-}
-#camera:not(.active) {
-    top: 67%;
-    left: 30%;
-}
 .dot.active{
     width: 100%;
     height: 100%;
@@ -190,21 +179,18 @@ getting all eleiments with the class img that are direct descendants of elements
     border-radius: 50%;
     position: absolute; 
 }
-.dot .inner,
-.dot .close{
-    display: none;
-}
-.red{
-    background-color: lightblue;
+.tan {
+    background-color: tan;
     opacity: 80%;
-    color: black; 
 }
-.annotate{
+
+.annotate {
     position: relative;
 }
-#camera2:not(.active) {
-    top: 60%;
-    left: 50%;
+
+#camera3:not(.active) {
+    top: 93%;
+    left: 1%;
 }
 .dot.active{
     width: 100%;
@@ -219,28 +205,152 @@ getting all eleiments with the class img that are direct descendants of elements
 .dot.active .close{
     display: block;
 }
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}
+.dot{
+    width: 25px;
+    height: 25px; 
+    border: 2px solid #fff; 
+    border-radius: 50%;
+    position: absolute; 
+}
 
-.blue {
-    background-color: lightseagreen;
-    opacity: 90%;
-    color: black;
+.purple {
+    background-color: rgb(210, 167, 211); 
+    opacity: 80%; 
+}
+.annotate {
+    position: relative; 
+}
+
+#camera4:not(.active){
+    top: 93%;
+    left: 1%; 
+}
+ 
+.dot.active{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.dot.active .inner,
+.dot.active .close{
+    display: block;
+}
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}
+.dot{
+    width: 25px;
+    height: 25px; 
+    border: 2px solid #fff; 
+    border-radius: 50%;
+    position: absolute; 
+}
+.tan {
+    background-color: tan;
+    opacity: 80%;
+}
+
+.annotate {
+    position: relative;
+}
+
+#camera3:not(.active) {
+    top: 93%;
+    left: 1%;
+}
+.dot.active{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.dot.active .inner,
+.dot.active .close{
+    display: block;
+}
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}
+.dot{
+    width: 25px;
+    height: 25px; 
+    border: 2px solid #fff; 
+    border-radius: 50%;
+    position: absolute; 
+}
+
+
+.pink{
+    background-color: orange;
+    opacity: 80%;
 }
 .annotate{
     position: relative;
 }
-#camera3:not(.active) {
-    top: 50%;
-    left: 49%;
+#camera:not(.active) {
+    top: 93%;
+    left: 1%;
+}
+.dot.active{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.dot.active .inner,
+.dot.active .close{
+    display: block;
+}
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}
+.dot{
+    width: 25px;
+    height: 25px; 
+    border: 2px solid #fff; 
+    border-radius: 50%;
+    position: absolute; 
+}
+.dot .inner,
+.dot .close{
+    display: none;
+}
+.red{
+    background-color: rgb(169, 143, 162);
+    opacity: 80%;
+}
+.annotate{
+    position: relative;
 }
 
-.green{
-    background-color: lightseagreen; 
-    opacity: 80%;
-    color: black; 
-} 
-#deceus:not(.active) {
-    top: 50%;
-    left: 49%;
+#camera2:not(.active) {
+    top: 93%;
+    left: 1%;
 }
 .dot.active{
     width: 100%;
@@ -266,7 +376,7 @@ getting all eleiments with the class img that are direct descendants of elements
 
 #camera2:not(.active) {
     top: 60%;
-    left: 44%;
+    left: 33%;
 }
 }
 
